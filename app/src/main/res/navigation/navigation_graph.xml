@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/popularCurrencyFragment">
+
+    <fragment
+        android:id="@+id/popularCurrencyFragment"
+        android:name="com.example.exchangerates.presenter.popular.PopularCurrencyFragment"
+        android:label="fragment_popular_currency"
+        tools:layout="@layout/fragment_popular_currency">
+        <action
+            android:id="@+id/fragmentFilter"
+            app:destination="@id/fragmentFilter"
+            app:popUpTo="@id/popularCurrencyFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/favoriteCurrencyFragment"
+        android:name="com.example.exchangerates.presenter.favorite.FavoriteCurrencyFragment"
+        android:label="fragment_favorite_currency"
+        tools:layout="@layout/fragment_favorite_currency"></fragment>
+    <dialog
+        android:id="@+id/fragmentFilter"
+        android:name="com.example.exchangerates.presenter.filter.BottomSheetFilterFragment"
+        android:label="fragment_filter"
+        tools:layout="@layout/fragment_filter">
+
+    </dialog>
+</navigation>
