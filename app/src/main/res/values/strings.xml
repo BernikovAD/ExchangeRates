@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">ExchangeRates</string>
+    <string name="favorite">Избранное</string>
+    <string name="Popular">Популярное</string>
+    <string name="sort">Сортировать список по ...</string>
+    <string name="alphabetically">По алфавиту</string>
+    <string name="value">По значению</string>
+    <string name="defaultt">По умолчанию</string>
+    <string name="ascending">По возрастанию</string>
+    <string name="descending">По убыванию</string>
 </resources>
